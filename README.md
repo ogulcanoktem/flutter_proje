@@ -1,6 +1,9 @@
 # first_app
 
 A new Flutter project.
+widget inspector kullanarak emulatörden bakılarak detaylı ölçümler yapalıyor .
+[const:] kelimesi memory efficient için kullanılır.
+[widget:] denilen şey aslında applicaton da görünen çoğu şeydir (text box,button,check list vs).
 
 ## Getting Started
 
