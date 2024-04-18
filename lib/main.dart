@@ -11,7 +11,10 @@ void main() {
         //appBar: AppBar(
         //  title: const Text("deneme"),
         //),
-        body: GradientContainer(),
+        body: GradientContainer(
+          Color.fromARGB(255, 213, 52, 3),
+          Color.fromARGB(255, 228, 101, 62),
+        ),
       ),
     ),
   );
