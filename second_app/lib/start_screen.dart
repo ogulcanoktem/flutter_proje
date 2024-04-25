@@ -18,16 +18,9 @@ class StartScreen extends StatelessWidget {
             width: 300,
             color: Colors.white,
           ),
-          //Opacity(
-          //  opacity: 0.8,
-          //  child: Image.asset(
-          //    'assets/images/quiz-logo.png',
-          //    width: 300,
-          //  ),
-          //),
           const SizedBox(height: 80),
           Text(
-            'Flutter Öğrenmenin Eğlenceli Hali !',
+            'Learning Flutter',
             style: GoogleFonts.lato(
               color: Colors.white,
               fontSize: 24,

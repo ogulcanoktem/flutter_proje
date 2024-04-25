@@ -5,7 +5,7 @@ import 'package:second_app/questions_screen.dart';
 import 'package:second_app/results_screen.dart';
 
 class Quiz extends StatefulWidget {
-  const Quiz({super.key});
+  const Quiz({Key? key}) : super(key: key);
 
   @override
   State<Quiz> createState() {
@@ -18,11 +18,9 @@ class _QuizState extends State<Quiz> {
   var activeScreen = 'start-screen';
 
   void switchScreen() {
-    setState(
-      () {
-        activeScreen = 'questions-screen';
-      },
-    );
+    setState(() {
+      activeScreen = 'questions-screen';
+    });
   }
 
   void chooseAnswer(String answer) {
@@ -30,14 +28,13 @@ class _QuizState extends State<Quiz> {
 
     if (selectedAnswers.length == questions.length) {
       setState(() {
-        selectedAnswers = [];
         activeScreen = 'results-screen';
       });
     }
   }
 
   @override
-  Widget build(context) {
+  Widget build(BuildContext context) {
     Widget screenWidget = StartScreen(switchScreen);
 
     if (activeScreen == 'questions-screen') {
